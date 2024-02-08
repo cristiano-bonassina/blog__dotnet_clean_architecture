@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>blog__dotnet_clean_architecture.Application</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.9.0" />
+		<PackageReference Include="LogicArt.Common" Version="8.0.24028.1523" />
+		<PackageReference Include="LogicArt.Common.EntityFramework" Version="8.0.24028.1523" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="Mapster.Async" Version="2.0.1" />
+		<PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+		<PackageReference Include="MediatR" Version="12.2.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\blog__dotnet_clean_architecture.Domain\blog__dotnet_clean_architecture.Domain.csproj" />
+		<ProjectReference Include="..\blog__dotnet_clean_architecture.Resources\blog__dotnet_clean_architecture.Resources.csproj" />
+	</ItemGroup>
+</Project>

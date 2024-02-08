@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>blog__dotnet_clean_architecture.Resources</RootNamespace>
+  </PropertyGroup>
+</Project>

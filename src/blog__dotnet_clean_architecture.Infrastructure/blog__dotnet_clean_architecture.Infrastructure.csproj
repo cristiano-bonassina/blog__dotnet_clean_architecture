@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>blog__dotnet_clean_architecture.Infrastructure</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Lamar" Version="13.0.2" />
+    <PackageReference Include="Lamar.Microsoft.DependencyInjection" Version="13.0.2" />
+    <PackageReference Include="LogicArt.Common.FluentValidation" Version="8.0.24028.1523" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
+    <PackageReference Include="UUIDNext" Version="3.0.0-beta2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\blog__dotnet_clean_architecture.Application\blog__dotnet_clean_architecture.Application.csproj" />
+  </ItemGroup>
+</Project>

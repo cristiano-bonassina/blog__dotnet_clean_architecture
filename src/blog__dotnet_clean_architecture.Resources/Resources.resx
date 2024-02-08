@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="TodoNotFound" xml:space="preserve">
+    <value>Todo item not found</value>
+  </data>
+</root>

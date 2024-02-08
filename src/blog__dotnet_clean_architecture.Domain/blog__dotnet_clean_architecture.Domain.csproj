@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>blog__dotnet_clean_architecture.Domain</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="LogicArt.Common.Types" Version="8.0.24028.1523" />
+  </ItemGroup>
+</Project>

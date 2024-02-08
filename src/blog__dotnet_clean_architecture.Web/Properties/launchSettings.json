@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "blog__dotnet_clean_architecture.Web": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7261",
+      "launchBrowser": false
+    }
+  }
+}
