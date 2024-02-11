@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace blog__dotnet_clean_architecture.Infrastructure.Data.Repositories;
 
 public class ReadOnlyRepository<TEntity>(AppDbContext dbContext) : IReadOnlyRepository<TEntity>
-    where TEntity : Entity, IAggregateRoot
+    where TEntity : Entity
 {
     private readonly DbSet<TEntity> _entities = dbContext.Set<TEntity>();
 

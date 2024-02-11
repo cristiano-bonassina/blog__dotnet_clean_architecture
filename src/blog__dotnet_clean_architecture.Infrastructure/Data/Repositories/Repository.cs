@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace blog__dotnet_clean_architecture.Infrastructure.Data.Repositories;
 
-public class Repository<TEntity>(AppDbContext dbContext) : ReadOnlyRepository<TEntity>(dbContext), IRepository<TEntity>
+public class Repository<TEntity>(AppDbContext dbContext) : IRepository<TEntity>
     where TEntity : Entity, IAggregateRoot
 {
     private readonly DbSet<TEntity> _entities = dbContext.Set<TEntity>();
@@ -22,12 +22,12 @@ public class Repository<TEntity>(AppDbContext dbContext) : ReadOnlyRepository<TE
         _entities.Remove(entity);
     }
 
-    public override IQueryable<TEntity> Query()
+    public IQueryable<TEntity> Query()
     {
         return _entities.AsQueryable();
     }
 
-    public override Task<TEntity?> GetByIdAsync(Id id, CancellationToken cancellationToken)
+    public Task<TEntity?> GetByIdAsync(Id id, CancellationToken cancellationToken)
     {
         return _entities.SingleOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
